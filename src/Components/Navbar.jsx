@@ -1,0 +1,141 @@
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+
+const Navbar = () => {
+  const [activeItem, setActiveItem] = useState("Home");
+
+  const menuItems = [
+    { label: "Home", path: "/" },
+    { label: "Services", path: "/services" },
+    { label: "Case Studies", path: "/case-studies" },
+    { label: "About", path: "/about" },
+    { label: "Contact", path: "/contact" },
+  ];
+
+  return (
+    <header className="bg-[#ffffff] w-full border-b border-black/5 fixed z-40">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center">
+        {/* Logo */}
+        <Link to="/">
+          <div className="flex items-center gap-2 group cursor-pointer">
+            <div className="w-8 h-8 rounded bg-black text-white flex items-center justify-center font-semibold group-hover:text-[#b88a1e] group-hover:scale-105 transition-all duration-300 text-xl">
+              M
+            </div>
+            <span className="text-xl tracking-wide font-semibold">
+              Movish
+              <span className="block text-[10px] font-normal tracking-widest text-black/60 group-hover:text-[#b88a1e] transition-colors duration-300">
+                HOSPITALITY
+              </span>
+            </span>
+          </div>
+        </Link>
+
+        {/* Navigation */}
+        <div className="ml-auto flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-8 text-md">
+            {menuItems.map((item) => (
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  `relative py-2 group/nav-link transition-all duration-300 ${
+                    isActive
+                      ? "text-[#b88a1e] font-semibold"
+                      : "text-black/70 hover:text-[#b88a1e]"
+                  }`
+                }
+              >
+                {item.label}
+
+                {/* underline */}
+                <span
+                  className={`
+      absolute bottom-0 left-0 h-0.5 bg-[#b88a1e]
+      transition-all duration-300
+      w-0 group-hover/nav-link:w-full
+    `}
+                />
+
+                {/* active underline */}
+                <span
+                  className={({ isActive }) =>
+                    `absolute bottom-0 left-0 h-0.5 bg-[#b88a1e]
+      ${isActive ? "w-full" : "w-0"}`
+                  }
+                />
+                {/* Hover indicator dot */}
+                <span
+                  className="
+                  absolute -top-1 -right-1 w-1 h-1 
+                  bg-[#b88a1e] rounded-full 
+                  opacity-0 group-hover/nav-link:opacity-100 
+                  transition-opacity duration-300
+                "
+                />
+              </NavLink>
+            ))}
+          </nav>
+
+          {/* CTA Button */}
+          <button
+            className="
+              bg-[#b88a1e] text-white px-5 py-2 
+              rounded-full text-sm font-medium 
+              flex items-center gap-2 
+              group/cta relative overflow-hidden
+              hover:text-white hover:gap-3
+              transition-all duration-300
+              hover:shadow-md hover:shadow-amber-900/10
+            "
+          >
+            {/* Button glow effect */}
+            <span
+              className={`
+              absolute inset-0 rounded-full 
+              transition-opacity duration-300
+              ${
+                activeItem === "contact"
+                  ? "opacity-20 bg-gradient-to-r from-white/30 via-white/10 to-white/30"
+                  : "opacity-0 group-hover/cta:opacity-20"
+              }
+            `}
+            />
+
+            {/* Button content */}
+            <span className="relative transition-all duration-300 group-hover/cta:translate-x-[-2px]">
+              <Link to="/contact">Schedule Strategic Discussion</Link>
+            </span>
+            <span
+              className="
+              relative transition-all duration-300 
+              group-hover/cta:translate-x-1 group-hover/cta:scale-125
+            "
+            >
+              →
+            </span>
+
+            {/* Button shine effect */}
+            <span
+              className="
+              absolute inset-0 rounded-full 
+              bg-gradient-to-r from-transparent via-white/20 to-transparent
+              translate-x-[-100%] group-hover/cta:translate-x-[100%]
+              transition-transform duration-700
+            "
+            />
+          </button>
+        </div>
+      </div>
+
+      {/* Active indicator bar for the whole navbar when on specific sections */}
+      <div
+        className={`
+        h-1 w-full bg-gradient-to-r from-transparent via-[#b88a1e]/30 to-transparent
+        transition-opacity duration-500
+        ${activeItem !== "Home" ? "opacity-100" : "opacity-0"}
+      `}
+      />
+    </header>
+  );
+};
+
+export default Navbar;

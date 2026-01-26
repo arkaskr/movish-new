@@ -1,0 +1,62 @@
+import { ChartNoAxesColumnIncreasing } from "lucide-react";
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Hero = () => {
+  return (
+    <section className="bg-[#f7f4ee] pt-20">
+      <div className="max-w-5xl mx-auto px-6 pt-20 pb-20 text-center">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 text-[#ca9822] text-sm mb-6">
+          <span>✨</span>
+          <span>India's Premier Restaurant Operations Authority</span>
+        </div>
+
+        {/* Heading */}
+        <h1 className="font-playfair text-5xl text-primary ml-10 lg:text-6xl xl:text-7xl max-w-4xl leading-none font-bold text-[#120f07d4] mb-6 ">
+          India's First Operations & <br />
+          Training Partner for <br />
+          Restaurants and QSRs
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-black/70 font-sans text-xl mx-auto mb-10">
+          We build teams that grow your brand and systems that run your business
+        </p>
+
+        {/* Buttons */}
+        <div className="flex justify-center gap-4 mb-16">
+          <button className="bg-[#b88a1e] text-white px-6 py-3 rounded-xl font-medium flex items-center gap-2 hover:opacity-90 transition">
+            <Link to="/services">View Services</Link>
+            <ChartNoAxesColumnIncreasing className="h-4" />
+          </button>
+
+          <button className="border border-black/30 px-6 py-3 rounded-xl font-medium flex items-center gap-2 hover:bg-black/5 transition">
+            <Link to="/contact">Book Audit</Link>
+            <span>→</span>
+          </button>
+        </div>
+
+        {/* Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-3 font-playfair text-center">
+          <div>
+            <h3 className="text-4xl font-bold text-[#dfa723d4]">14days</h3>
+            <p className="text-sm text-black/60 mt-1">Profit Gap Audit</p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-[#dfa723d4]">₹2.3L+</h3>
+            <p className="text-sm text-black/60 mt-1">Avg. Monthly Savings</p>
+          </div>
+
+          <div>
+            <h3 className="text-4xl font-bold text-[#dfa723d4]">40%</h3>
+            <p className="text-sm text-black/60 mt-1">Better Retention</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
