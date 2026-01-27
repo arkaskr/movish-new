@@ -25,7 +25,7 @@ const Hero = () => {
         </p>
 
         {/* Buttons */}
-        <div className="flex justify-center gap-4 mb-16">
+        <div className="flex justify-center gap-4 mb-8">
           <button className="bg-[#b88a1e] text-white px-6 py-3 rounded-xl font-medium flex items-center gap-2 hover:opacity-90 transition">
             <Link to="/services">View Services</Link>
             <ChartNoAxesColumnIncreasing className="h-4" />
@@ -35,6 +35,11 @@ const Hero = () => {
             <Link to="/contact">Book Audit</Link>
             <span>→</span>
           </button>
+        </div>
+
+        {/* Divider */}
+        <div className="w-full flex justify-center mb-8">
+          <div className="w-[80%] h-px bg-[#ebe7de]" />
         </div>
 
         {/* Stats */}

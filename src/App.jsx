@@ -7,10 +7,12 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Services from "./Pages/Services";
 import CaseStudy from "./Pages/CaseStudies";
+import ScrollToTop from "./Components/scrollTop";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
