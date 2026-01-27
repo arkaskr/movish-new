@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../../../movish/src/Components/HomePage/Hero";
+import Hero from "../Components/HomePage/Hero";
 import ExcellenceFramework from "../Components/HomePage/ExcellenceFramework";
 import Hotels from "../Components/HomePage/Hotels";
 import Article from "../Components/HomePage/Articles";
