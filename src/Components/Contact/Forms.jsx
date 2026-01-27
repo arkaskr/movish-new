@@ -11,7 +11,7 @@ const Forms = () => {
   const [step, setStep] = useState(1);
 
   return (
-    <section className="bg-[#fdfcf9] py-24">
+    <section className="bg-[#fdfcf9] py-8 sm:py-24">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* LEFT FORM */}
         <div className="bg-white font-sans rounded-2xl shadow-sm p-10">

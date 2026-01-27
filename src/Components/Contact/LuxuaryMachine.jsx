@@ -2,7 +2,7 @@ import React from "react";
 
 const LuxuryMachine = () => {
   return (
-    <section className="w-full py-24 bg-gradient-to-br from-[#444343] via-[#686666] to-[#d9d7d2]">
+    <section className="w-full py-8 sm:py-24 bg-gradient-to-br from-[#444343] via-[#686666] to-[#d9d7d2]">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
           Ready to Build Your Luxury Machine?

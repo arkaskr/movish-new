@@ -11,7 +11,7 @@ import {
 export default function Hero() {
   return (
     <section className="bg-[#f7f4ee] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 pt-40 pb-24 text-center">
+      <div className="max-w-7xl mx-auto px-6 pt-16 sm:pt-40 pb-8 sm:pb-24 text-center">
         {/* Top label */}
         <div className="flex font-sans justify-center items-center gap-2 mb-6 text-[12px] tracking-widest text-[#d0a22f] font-semibold">
           <span>✨</span>
@@ -33,7 +33,7 @@ export default function Hero() {
         </p>
 
         {/* Buttons */}
-        <div className="mt-12 flex justify-center gap-4 flex-wrap">
+        <div className=" mt-8 sm:mt-12 flex justify-center gap-4 flex-wrap">
           <button className="bg-[#c59a2a] hover:bg-[#b38b24] text-white px-8 py-4 rounded-xl font-medium flex items-center gap-2 transition">
             Explore Services
             <ArrowDown className="h-5" />
@@ -46,7 +46,7 @@ export default function Hero() {
       </div>
 
       {/* Stats */}
-      <div className="max-w-7xl mx-auto px-6 pb-24">
+      <div className="max-w-7xl mx-auto px-6 pb-8 sm:pb-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-2xl shadow-sm p-10 text-center">
             <div className="flex justify-center mb-4">

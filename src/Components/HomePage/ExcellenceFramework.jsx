@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const ExcellenceFramework = () => {
   return (
-    <section className="bg-[#fdfcf9] py-20">
+    <section className="bg-[#fdfcf9] py-8 sm:py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Top Label */}
         <div className="flex items-center justify-center gap-2 text-md text-gray-600 mb-6">
@@ -148,7 +148,7 @@ const ExcellenceFramework = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-5 sm:mt-20">
           <button className="border border-gray-900 px-8 py-4 rounded-xl text-sm font-medium flex items-center gap-2 hover:bg-gray-900 hover:text-white transition">
             <Link to="/services">View All Services</Link> <ArrowRight size={16} />
           </button>

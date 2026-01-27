@@ -43,7 +43,7 @@ const philosophies = [
 
 const Philosophy = () => {
   return (
-    <section className="bg-[#fdfcf9] py-28">
+    <section className="bg-[#fdfcf9] py-8 sm:py-28">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-20">

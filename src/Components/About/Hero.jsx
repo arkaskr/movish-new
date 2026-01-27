@@ -2,7 +2,7 @@ import founderImg from "../../assets/founders/f2.png";
 
 const Hero = () => {
   return (
-    <section className="bg-[#fdfcf9] py-40">
+    <section className="bg-[#fdfcf9] py-16 sm:py-40">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center">
         {/* Left Content */}
         <div>
@@ -37,7 +37,7 @@ const Hero = () => {
             />
 
             {/* Overlay Card */}
-            <div className="absolute -bottom-6 -right-8 bg-white/95 backdrop-blur rounded-xl px-6 py-4 shadow-lg border border-gray-100">
+            <div className="absolute -bottom-6 -right-5 sm:-right-8 bg-white/95 backdrop-blur rounded-xl px-6 py-4 shadow-lg border border-gray-100">
               <p className="text-3xl font-semibold text-gray-900 leading-none">
                 8+
               </p>

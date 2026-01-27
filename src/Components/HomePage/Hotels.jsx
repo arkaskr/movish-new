@@ -12,7 +12,7 @@ const Hotels = () => {
   const hotels = [h1, h2, h3, h4, h5, h6, h7];
 
   return (
-    <section className="bg-[#f7f4ee] py-28">
+    <section className="bg-[#f7f4ee] py-8 sm:py-28">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-center text-2xl md:text-4xl font-playfair font-bold text-[#120f07d4] ">
@@ -41,18 +41,18 @@ const Hotels = () => {
         </div>
 
         {/* Credentials label */}
-        <div className="mt-28 flex items-center justify-center gap-2 text-md text-gray-600">
+        <div className="mt-8 sm:mt-28 flex items-center justify-center gap-2 text-md text-gray-600">
           <ShieldCheck size={20} />
           <span>Credentials & Recognition</span>
         </div>
 
         {/* Second heading */}
-        <h3 className="text-center text-4xl font-playfair font-bold text-[#120f07d4]  mt-6">
+        <h3 className="text-center text-4xl font-playfair font-bold text-[#120f07d4] mt-2 sm:mt-6">
           Built on Hospitality Excellence
         </h3>
 
         {/* Credentials grid */}
-        <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+        <div className=" mt-8 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
           <div className="text-center">
             <div className="mx-auto h-16 w-16 rounded-xl bg-white flex items-center justify-center shadow-sm mb-6">
               <GraduationCap size={34} className="text-[#d4af37]" />

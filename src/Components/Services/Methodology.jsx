@@ -2,7 +2,7 @@ import { Search, Settings, Rocket, TrendingUp, Lightbulb } from "lucide-react";
 
 export default function Methodology() {
   return (
-    <section className="bg-[#2b2b2b] text-white py-24 px-6">
+    <section className="bg-[#2b2b2b] text-white py-8 sm:py-24 px-6">
       <div className="max-w-6xl mx-auto text-center">
         {/* Eyebrow */}
         <p className="text-sm tracking-widest text-[#d4af37] uppercase mb-4">

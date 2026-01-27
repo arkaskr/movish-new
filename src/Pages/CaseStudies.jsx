@@ -94,7 +94,7 @@ const caseStudies = [
 
 export default function CaseStudy() {
   return (
-    <section className="bg-[#f7f4ee] py-28">
+    <section className="bg-[#f7f4ee] py-14 sm:py-28">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-20">
@@ -169,8 +169,8 @@ export default function CaseStudy() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center max-w-3xl mx-auto mt-32">
-          <Rocket className="h-10 w-10 text-[#c59a2a] mx-auto mb-6" />
+        <div className="text-center max-w-3xl mx-auto mt-8 sm:mt-32">
+          <Rocket className="h-10 w-10 text-[#c59a2a] mx-automb-6" />
           <h3 className="font-playfair text-3xl md:text-4xl font-bold mb-4">
             Ready to Write Your Success Story?
           </h3>

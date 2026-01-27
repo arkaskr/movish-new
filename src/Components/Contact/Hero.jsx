@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-[#f7f4ee] py-32">
+    <section className="bg-[#f7f4ee] pt-24 pb-8 sm:py-32">
       <div className="max-w-4xl mx-auto px-6 text-center">
         {/* Heading */}
         <h2 className="font-playfair font-bold text-4xl md:text-6xl text-[#120f07d4] leading-tight">

@@ -6,7 +6,7 @@ import c3 from "../../assets/coreofferings/c3.png";
 
 export default function CoreOfferings() {
   return (
-    <section className="bg-[#fdfcf9] py-28">
+    <section className="bg-[#fdfcf9] py-8 sm:py-28">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
@@ -23,7 +23,7 @@ export default function CoreOfferings() {
         </div>
 
         {/* Top large card */}
-        <div className="group bg-white rounded-3xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-xl mb-16">
+        <div className="group bg-white rounded-3xl shadow-sm overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-xl mb-8 sm:mb-16">
           <img
             src={c1}
             alt="Operational SOPs"

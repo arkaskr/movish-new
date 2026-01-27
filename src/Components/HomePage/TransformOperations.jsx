@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const TransformOperations = () => {
   return (
     <section
-      className="py-28 text-white"
+      className="py-8 sm:py-28 text-white"
       style={{
         background:
           "linear-gradient(160deg, #3a342d 0%, #5a4f40 45%, #8a775d 100%)",

@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const Article = () => {
   return (
-    <section className="bg-[#f7f4ee] py-20">
+    <section className="bg-[#f7f4ee] py-8 sm:py-20">
       <div className="max-w-6xl mx-auto px-4">
         {/* Top label */}
         <div className="flex items-center justify-center gap-2 text-sm text-green-700 mb-4">

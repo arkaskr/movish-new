@@ -30,7 +30,7 @@ const missions = [
 
 const Mission = () => {
   return (
-    <section className="bg-[#2f2f2f] py-28">
+    <section className="bg-[#2f2f2f] py-8 sm:py-28">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center max-w-4xl mx-auto mb-18">

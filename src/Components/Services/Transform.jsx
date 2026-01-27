@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, Check, Sparkles } from "lucide-react";
 export default function Transform() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#2b2b2b] via-[#4a4a4a] to-[#d9d7d2]">
-      <div className="max-w-7xl mx-auto px-6 py-32 text-center">
+      <div className="max-w-7xl mx-auto px-6 py-8 sm:py-32 text-center">
         {/* Top badge */}
         <div className="flex justify-center items-center gap-2 text-sm tracking-widest text-[#d0a22f] font-semibold mb-6">
           <Sparkles size={16} />

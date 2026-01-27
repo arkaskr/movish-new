@@ -30,7 +30,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="w-full bg-[#fdfcf9] py-16">
+    <section className="w-full bg-[#fdfcf9] py-8 sm:py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
           {stats.map((stat, index) => {

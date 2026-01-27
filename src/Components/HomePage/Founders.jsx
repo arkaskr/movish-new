@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Founder = () => {
   return (
-    <section className="bg-[#fdfcf9] py-24">
+    <section className="bg-[#fdfcf9] py-8 sm:py-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Image Section */}
